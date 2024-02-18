@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+
+
+.navbar {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(123, 200, 123);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.navbar .logo i {
+  color: #0aa5ff;
+  font-size: 22px;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(3, 1, 1);
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #ccc3c3;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #060101;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: white;
+}
+
+
+.menu-links span {
+  font-weight: 500;
+  color: #060101;
+  padding: 8px 16px;
+}
+.menu-links span:hover {
+  color: white;
+}
+
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #fbfbfb;
+  border-radius: 10px;
+  border: 2px solid #0aa5ff;
+  transition: 0.2s;
+}
+.reg-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #fbfbfb;
+  border-radius: 10px;
+  border: 2px solid #d61981e4;
+  transition: 0.2s;
+}
+
+.reg-in:hover {
+  background-color: #ff0a64ab;
+  color: white;
+}
+.log-in:hover {
+  background-color: #0aa5ff;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: rgb(156, 93, 93);
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(216, 0, 0);
+}
+
+section > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  text-wrap: balance;
+}
+
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+.pi{
+    margin-left: -10px;
+    margin-top: -35px;
+  display: flex;
+  width: 60px;
+  align-content: last baseline;
+  max-height: 10;
+  
+
+}
+.dropbox{
+  background-color: rgb(123, 200, 123);  
+  border: none;
+  font-size: 17px;
+  align-items: center;
+}
+
+.menu-links select:hover {
+  color: white;
+}
+
+
+button {
+  border: 0;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dropdowns {
+  display: flex;
+
+}
+.dropdown {
+  position: relative;
+ 
+}
+
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+.dropdown:hover {
+  background-color: rgb(123, 200, 123);  
+  cursor: pointer;
+}
+.dropdown-button span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.dropdown-button i {
+  font-size: 14px;
+}
+
+.dropdown:hover > .dropdown-menu {
+ display: flex;
+  flex-direction: column;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the button */
+  left: 0;
+  background-color: rgb(123, 200, 123); 
+  padding: 5px;
+  z-index: 1; /* Ensure the dropdown is above the image */
+}
+
+.dropdown-menu button {
+  padding: 12px 24px;
+}
+
+.dropdown-menu button:hover {
+  background-color: hsla(90, 4%, 10%, 0.521);
+  width: 55%;
+}
+
+.usernavContainer {
+ height: 50px;
+ background-color: rgb(123, 200, 123); 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersearchContainer {
+  display: flex;
+  background-color: rgb(123, 200, 123); 
+ 
+}
+
+.usersearchInput {
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(123, 200, 123); 
+  border-radius: 30px 0px 0px 30px  ;
+  
+}
+
+.usersearchButton {
+  padding: 6px 10px;
+  background-color: #000100a8;
+  color: #dadada;
+  border: none;
+  cursor: pointer;
+  margin-right: 40px;
+  border-radius: 0px 30px 30px 0px ;
+}
